@@ -91,6 +91,9 @@ class App extends Component {
         posts: [...this.state.posts, post],
       });
     }
+    this.setState({
+      posts: this.state.posts.sort((a, b) => b.tipAmount - a.tipAmount),
+    });
 
     console.log(this.state.posts);
   };
@@ -135,7 +138,7 @@ class App extends Component {
                 </button>
               </form>
             </div>
-            {this.state.posts.map((value, key) => {
+            {this.state.posts.map((value) => {
               return (
                 <>
                   <div className="box">
@@ -150,7 +153,7 @@ class App extends Component {
                       </div>
                       <div
                         className="tip"
-                        onClick={() => this.tipPost(key + 1)}
+                        onClick={() => this.tipPost(value.id)}
                       >
                         Tip 0.1Eth
                       </div>
