@@ -1,1 +1,54 @@
 /* Styles go here */
+* {
+  margin-bottom: 5px;
+}
+.box {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.address {
+  padding: 10px;
+  background-color: lightgray;
+}
+.cont {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+.tipDetails {
+  display: flex;
+  flex: column;
+  padding: 10px;
+}
+
+.tippedAmount {
+  flex: 1;
+  text-align: left;
+}
+
+.tip:hover {
+  cursor: pointer;
+}
+
+.tip {
+  color: blue;
+}
+.margin {
+  margin: 10px;
+  width: 300px;
+}
+
+.button {
+  width: 300px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  height: 40px;
+}
+
+.button:hover {
+  background-color:blue;
+  color: white;
+}
